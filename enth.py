@@ -25,6 +25,12 @@ totmass = float(inval5)
 enth = psychrolib.GetMoistAirEnthalpy(inv, inv3)
 ens = str(enth)
 
+enth2 = psychrolib.GetSatAirEnthalpy(inv, inv3)
+ensb = str(enth2)
+
+enth3 = psychrolib.GetDryAirEnthalpy(inv)
+ensc = str(enth3)
+
 vol = psychrolib.GetDryAirVolume(inv, inv2)
 ens2 = str(vol)
 
@@ -38,7 +44,15 @@ specvol = str(spvol)
 
 print("")
 
-print ("The mpist-air enthalpy is: " + ens)
+print ("The moist-air enthalpy is: " + ens)
+
+print("")
+
+print ("The saturated-air enthalpy is: " + ensb)
+
+print("")
+
+print ("The dry-air enthalpy is: " + ensc)
 
 print("")
 
