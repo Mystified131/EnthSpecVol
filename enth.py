@@ -22,7 +22,7 @@ print("")
 inval5 = input ("Please enter the kg of dry air and water vapor: ")
 totmass = float(inval5)
 
-enth = psychrolib.GetDryAirEnthalpy(inv)
+enth = psychrolib.GetMoistAirEnthalpy(inv, inv3)
 ens = str(enth)
 
 vol = psychrolib.GetDryAirVolume(inv, inv2)
@@ -38,7 +38,7 @@ specvol = str(spvol)
 
 print("")
 
-print ("The enthalpy is: " + ens)
+print ("The mpist-air enthalpy is: " + ens)
 
 print("")
 
